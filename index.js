@@ -29,4 +29,4 @@ const operate = (operator, num1, num2) => {
     } else {
         return 'ERROR';
     };
-};e
+};
