@@ -11,6 +11,8 @@
     'digit0 digit0 decimal equals';
 
     width: 50%;
+    border: 10px solid #2F2F2F;
+    background-color: #2F2F2F;
 }
 
 
@@ -21,6 +23,7 @@
     border: 3px solid black;
 
     grid-area: display;
+    background-color: white;
 }
 
 button {
