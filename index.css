@@ -1,0 +1,119 @@
+.calculatorBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    'display display display display'
+    'clear sign percent divide'
+    'digit7 digit8 digit9 multiply'
+    'digit4 digit5 digit6 subtract'
+    'digit1 digit2 digit3 add'
+    'digit0 digit0 decimal equals';
+}
+
+
+/* PARTS OF THE CALCULATOR UI */
+.display {
+    width: 98.9%;
+    height: 250px;
+    border: 3px solid black;
+
+    grid-area: display;
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.sign {
+    grid-area: sign;
+}
+
+.percent {
+    grid-area: percent
+}
+
+.divide {
+    grid-area: divide
+}
+
+.number {
+    grid-area: number;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.subtract {
+    grid-area: subtract;
+}
+
+.add {
+    grid-area: add;
+}
+
+.decimal {
+    grid-area: decimal;
+}
+
+.equals {
+    grid-area: equals;
+}
+
+.digit7 {
+    grid-area: digit7;
+}
+
+.digit8 {
+    grid-area: digit8;
+}
+
+.digit9 {
+    grid-area: digit9;
+}
+
+.digit4 {
+    grid-area: digit4;
+}
+
+.digit5 {
+    grid-area: digit5;
+}
+
+.digit6 {
+    grid-area: digit6;
+}
+
+.digit1 {
+    grid-area: digit1;
+}
+
+.digit2 {
+    grid-area: digit2;
+}
+
+.digit3 {
+    grid-area: digit3;
+}
+
+.digit0 {
+    grid-area: digit0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
