@@ -9,16 +9,22 @@
     'digit4 digit5 digit6 subtract'
     'digit1 digit2 digit3 add'
     'digit0 digit0 decimal equals';
+
+    width: 50%;
 }
 
 
 /* PARTS OF THE CALCULATOR UI */
 .display {
-    width: 98.9%;
-    height: 250px;
+    width: 98%;
+    height: 5em;
     border: 3px solid black;
 
     grid-area: display;
+}
+
+button {
+    height: 60px;
 }
 
 .clear {
