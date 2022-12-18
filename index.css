@@ -10,7 +10,7 @@
     'digit1 digit2 digit3 add'
     'digit0 digit0 decimal equals';
 
-    width: 17em;
+    width: 22em;
     height: 100%;
     border: 10px solid #2F2F2F;
     background-color: #2F2F2F;
@@ -20,8 +20,8 @@
 
 /* PARTS OF THE CALCULATOR UI */
 .display {
-    width: 98%;
-    height: 5em;
+    width: 98.5%;
+    height: 6em;
     border: 3px solid black;
     border-radius: 5px;
 
@@ -30,7 +30,7 @@
 }
 
 button {
-    height: 60px;
+    height: 80px;
 }
 
 .clear {
