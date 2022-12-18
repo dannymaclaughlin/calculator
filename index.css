@@ -1,3 +1,8 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .calculatorBody {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -13,13 +18,14 @@
     width: 22em;
     height: 100%;
     border: 10px solid #2F2F2F;
-    background-color: #2F2F2F;
+    background-color: #2f2f2f;
     border-radius: 10px;
 }
 
 
 /* PARTS OF THE CALCULATOR UI */
-.display {
+/* DISPLAY */
+#display {
     width: 98.5%;
     height: 6em;
     border: 3px solid black;
@@ -29,6 +35,21 @@
     background-color: white;
 }
 
+.displayTextArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    width: 98.5%;
+    height: 6em;
+}
+
+.displayText {
+    font-size: 50px;
+}
+
+/* BUTTONS */
 button {
     height: 80px;
 }
