@@ -10,9 +10,11 @@
     'digit1 digit2 digit3 add'
     'digit0 digit0 decimal equals';
 
-    width: 50%;
+    width: 17em;
+    height: 100%;
     border: 10px solid #2F2F2F;
     background-color: #2F2F2F;
+    border-radius: 10px;
 }
 
 
@@ -21,6 +23,7 @@
     width: 98%;
     height: 5em;
     border: 3px solid black;
+    border-radius: 5px;
 
     grid-area: display;
     background-color: white;
