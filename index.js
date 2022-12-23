@@ -30,3 +30,59 @@ const operate = (operator, num1, num2) => {
         return 'ERROR';
     };
 };
+
+// Create the functions that populate the display when you click the number buttons. 
+//
+// You should be storing the ‘display value’ in a variable somewhere for use in the 
+// next step.
+
+const button7 = document.querySelector('.digit7');
+button7.addEventListener('click', () => {
+    // alert('7');
+    document.getElementById('displayText').innerHTML += '7';
+});
+
+const button8 = document.querySelector('.digit8');
+button8.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '8';
+});
+
+const button9 = document.querySelector('.digit9');
+button9.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '9';
+});
+
+const button4 = document.querySelector('.digit4');
+button4.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '4';
+});
+
+const button5 = document.querySelector('.digit5');
+button5.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '5';
+});
+
+const button6 = document.querySelector('.digit6');
+button6.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '6';
+});
+
+const button1 = document.querySelector('.digit1');
+button1.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '1';
+});
+
+const button2 = document.querySelector('.digit2');
+button2.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '2';
+});
+
+const button3 = document.querySelector('.digit3');
+button3.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '3';
+});
+
+const button0 = document.querySelector('.digit0');
+button0.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '0';
+});
