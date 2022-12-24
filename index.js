@@ -38,51 +38,100 @@ const operate = (operator, num1, num2) => {
 
 const button7 = document.querySelector('.digit7');
 button7.addEventListener('click', () => {
-    // alert('7');
-    document.getElementById('displayText').innerHTML += '7';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '7';
+    } else {
+        displayText.innerHTML += '7';
+    };
 });
 
 const button8 = document.querySelector('.digit8');
 button8.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '8';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '8';
+    } else {
+        displayText.innerHTML += '8';
+    };
 });
 
 const button9 = document.querySelector('.digit9');
 button9.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '9';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '9';
+    } else {
+        displayText.innerHTML += '9';
+    };
 });
 
 const button4 = document.querySelector('.digit4');
 button4.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '4';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '4';
+    } else {
+        displayText.innerHTML += '4';
+    };
 });
 
 const button5 = document.querySelector('.digit5');
 button5.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '5';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '5';
+    } else {
+        displayText.innerHTML += '5';
+    };
 });
 
 const button6 = document.querySelector('.digit6');
 button6.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '6';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '6';
+    } else {
+        displayText.innerHTML += '6';
+    };
 });
 
 const button1 = document.querySelector('.digit1');
 button1.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '1';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '1';
+    } else {
+        displayText.innerHTML += '1';
+    };
 });
 
 const button2 = document.querySelector('.digit2');
 button2.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '2';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '2';
+    } else {
+        displayText.innerHTML += '2';
+    };
 });
 
 const button3 = document.querySelector('.digit3');
 button3.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '3';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '3';
+    } else {
+        displayText.innerHTML += '3';
+    };
 });
 
 const button0 = document.querySelector('.digit0');
 button0.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '0';
+    const displayText = document.getElementById('displayText');
+    if (displayText.innerHTML === '0') {
+        displayText.innerHTML = '0';
+    } else {
+        displayText.innerHTML += '0';
+    };
 });
