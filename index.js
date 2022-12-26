@@ -135,3 +135,14 @@ button0.addEventListener('click', () => {
         displayText.innerHTML += '0';
     };
 });
+
+const decimalButton = document.querySelector('.decimal');
+decimalButton.addEventListener('click', () => {
+    document.getElementById('displayText').innerHTML += '.';
+
+    if (displayText.innerHTML.includes('.')) {
+        decimalButton.disabled = true;
+    } else {
+        decimalButton.disabled = false;
+    };
+});
