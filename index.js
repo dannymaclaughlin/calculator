@@ -36,113 +36,135 @@ const operate = (operator, num1, num2) => {
 // You should be storing the ‘display value’ in a variable somewhere for use in the 
 // next step.
 
+let displayText = '0';
+let displayValue;
+
 const button7 = document.querySelector('.digit7');
 button7.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '7';
+    if (displayText === '0') {
+        displayText = '7';
     } else {
-        displayText.innerHTML += '7';
+        displayText += '7';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button8 = document.querySelector('.digit8');
 button8.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '8';
+    if (displayText === '0') {
+        displayText = '8';
     } else {
-        displayText.innerHTML += '8';
+        displayText += '8';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button9 = document.querySelector('.digit9');
 button9.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '9';
+    if (displayText === '0') {
+        displayText = '9';
     } else {
-        displayText.innerHTML += '9';
+        displayText += '9';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button4 = document.querySelector('.digit4');
 button4.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '4';
+    if (displayText === '0') {
+        displayText = '4';
     } else {
-        displayText.innerHTML += '4';
+        displayText += '4';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button5 = document.querySelector('.digit5');
 button5.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '5';
+    if (displayText === '0') {
+        displayText = '5';
     } else {
-        displayText.innerHTML += '5';
+        displayText += '5';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button6 = document.querySelector('.digit6');
 button6.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '6';
+    if (displayText === '0') {
+        displayText = '6';
     } else {
-        displayText.innerHTML += '6';
+        displayText += '6';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button1 = document.querySelector('.digit1');
 button1.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '1';
+    if (displayText === '0') {
+        displayText = '1';
     } else {
-        displayText.innerHTML += '1';
+        displayText += '1';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button2 = document.querySelector('.digit2');
 button2.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '2';
+    if (displayText === '0') {
+        displayText = '2';
     } else {
-        displayText.innerHTML += '2';
+        displayText += '2';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button3 = document.querySelector('.digit3');
 button3.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '3';
+    if (displayText === '0') {
+        displayText = '3';
     } else {
-        displayText.innerHTML += '3';
+        displayText += '3';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button0 = document.querySelector('.digit0');
 button0.addEventListener('click', () => {
-    const displayText = document.getElementById('displayText');
-    if (displayText.innerHTML === '0') {
-        displayText.innerHTML = '0';
+    if (displayText === '0') {
+        displayText = '0';
     } else {
-        displayText.innerHTML += '0';
+        displayText += '0';
     };
+
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
 
 const decimalButton = document.querySelector('.decimal');
 decimalButton.addEventListener('click', () => {
-    document.getElementById('displayText').innerHTML += '.';
+    if (!displayText.includes('.')) {
+        displayText += '.';
+    }
 
-    if (displayText.innerHTML.includes('.')) {
-        decimalButton.disabled = true;
-    } else {
-        decimalButton.disabled = false;
-    };
+    displayValue = displayText;
+    document.getElementById('displayText').innerHTML = displayText;
 });
