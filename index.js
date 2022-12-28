@@ -37,7 +37,7 @@ const operate = (operator, num1, num2) => {
 // next step.
 
 let displayText = '0';
-let displayValue;
+let firstDisplayValue;
 
 const button7 = document.querySelector('.digit7');
 button7.addEventListener('click', () => {
@@ -47,7 +47,7 @@ button7.addEventListener('click', () => {
         displayText += '7';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -59,7 +59,7 @@ button8.addEventListener('click', () => {
         displayText += '8';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -71,7 +71,7 @@ button9.addEventListener('click', () => {
         displayText += '9';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -83,7 +83,7 @@ button4.addEventListener('click', () => {
         displayText += '4';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -95,7 +95,7 @@ button5.addEventListener('click', () => {
         displayText += '5';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -107,7 +107,7 @@ button6.addEventListener('click', () => {
         displayText += '6';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -119,7 +119,7 @@ button1.addEventListener('click', () => {
         displayText += '1';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -131,7 +131,7 @@ button2.addEventListener('click', () => {
         displayText += '2';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -143,7 +143,7 @@ button3.addEventListener('click', () => {
         displayText += '3';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -155,7 +155,7 @@ button0.addEventListener('click', () => {
         displayText += '0';
     };
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -165,6 +165,6 @@ decimalButton.addEventListener('click', () => {
         displayText += '.';
     }
 
-    displayValue = displayText;
+    firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
