@@ -168,3 +168,12 @@ decimalButton.addEventListener('click', () => {
     firstDisplayValue = displayText;
     document.getElementById('displayText').innerHTML = displayText;
 });
+
+const clearButton = document.querySelector('.clear');
+clearButton.addEventListener('click', () => {
+    if (displayText != '0') {
+        displayText = '0';
+    };
+
+    document.getElementById('displayText').innerHTML = displayText;
+});
