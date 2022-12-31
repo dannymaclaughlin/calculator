@@ -177,3 +177,44 @@ clearButton.addEventListener('click', () => {
 
     document.getElementById('displayText').innerHTML = displayText;
 });
+
+const additionButton = document.querySelector('.add');
+additionButton.addEventListener('click', () => {
+    if (!displayText.includes('+')) {
+        displayText = '+';
+    };
+
+    document.getElementById('displayText').innerHTML = displayText;
+})
+
+const subtractButton = document.querySelector('.subtract');
+subtractButton.addEventListener('click', () => {
+    if (!displayText.includes('-')) {
+        displayText = '-';
+    };
+
+    document.getElementById('displayText').innerHTML = displayText;
+});
+
+const multiplyButton = document.querySelector('.multiply');
+multiplyButton.addEventListener('click', () => {
+    if (!displayText.includes('*')) {
+        displayText = '*';
+    };
+
+    document.getElementById('displayText').innerHTML = displayText;
+})
+
+const divideButton = document.querySelector('.divide');
+divideButton.addEventListener('click', () => {
+    if (!displayText.includes('/')) {
+        displayText = '/';
+    };
+
+    document.getElementById('displayText').innerHTML = displayText;
+})
+
+// function returnText() {
+//     let input = document.getElementById('displayText').value;
+//     alert(input)
+// }
