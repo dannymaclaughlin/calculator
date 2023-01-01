@@ -195,41 +195,26 @@ additionButton.addEventListener('click', () => {
 
 const subtractButton = document.querySelector('.subtract');
 subtractButton.addEventListener('click', () => {
-    if (!displayText.includes('-')) {
-        displayText = '-';
-    };
-
-    document.getElementById('displayText').innerHTML = displayText;
-
-    operator = displayText;
-
-    alert(operator);
+    operator = '-';
+    secondDisplayValue = firstDisplayValue;
+    firstDisplayValue = '';
+    displayText = '0';
 });
 
 const multiplyButton = document.querySelector('.multiply');
 multiplyButton.addEventListener('click', () => {
-    if (!displayText.includes('*')) {
-        displayText = '*';
-    };
-
-    document.getElementById('displayText').innerHTML = displayText;
-
-    operator = displayText;
-
-    alert(operator);
+    operator = '*';
+    secondDisplayValue = firstDisplayValue;
+    firstDisplayValue = ''
+    displayText = '0'
 })
 
 const divideButton = document.querySelector('.divide');
 divideButton.addEventListener('click', () => {
-    if (!displayText.includes('/')) {
-        displayText = '/';
-    };
-
-    document.getElementById('displayText').innerHTML = displayText;
-
-    operator = displayText;
-
-    alert(operator);
+    operator = '/';
+    secondDisplayValue = firstDisplayValue;
+    firstDisplayValue = '';
+    displayText = '0';
 })
 
 const equalsButton = document.querySelector('.equals');
@@ -238,5 +223,5 @@ equalsButton.addEventListener('click', () => {
     displayText = result;
 
     document.getElementById('displayText').innerHTML = result;
-    secondDisplayValue = result;
+    // secondDisplayValue = result;
 })
