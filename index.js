@@ -47,48 +47,48 @@ let result;
 const button7 = document.querySelector('.digit7');
 button7.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('7');
+        displayText = '7';
     } else {
         displayText += '7';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button8 = document.querySelector('.digit8');
 button8.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('8');
+        displayText = '8';
     } else {
-        displayText += '8';
+        displayText += parseInt('8');
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button9 = document.querySelector('.digit9');
 button9.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('9');
+        displayText = '9';
     } else {
         displayText += '9';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button4 = document.querySelector('.digit4');
 button4.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('4');
+        displayText = '4';
     } else {
         displayText += '4';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -100,67 +100,67 @@ button5.addEventListener('click', () => {
         displayText += '5';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button6 = document.querySelector('.digit6');
 button6.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('6');
+        displayText = '6';
     } else {
         displayText += '6';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button1 = document.querySelector('.digit1');
 button1.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('1');
+        displayText = '1';
     } else {
         displayText += '1';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button2 = document.querySelector('.digit2');
 button2.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('2');
+        displayText = '2';
     } else {
         displayText += '2';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button3 = document.querySelector('.digit3');
 button3.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('3');
+        displayText = '3';
     } else {
         displayText += '3';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
 const button0 = document.querySelector('.digit0');
 button0.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('0');
+        displayText = '0';
     } else {
         displayText += '0';
     };
 
-    firstDisplayValue = displayText;
+    firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
 });
 
@@ -220,8 +220,11 @@ divideButton.addEventListener('click', () => {
 const equalsButton = document.querySelector('.equals');
 equalsButton.addEventListener('click', () => {
     result = operate(operator, secondDisplayValue, firstDisplayValue);
+    console.log(result);
     displayText = result;
+    console.log(displayText);
+    firstDisplayValue = parseInt(result);
+    console.log(firstDisplayValue);
 
     document.getElementById('displayText').innerHTML = result;
-    // secondDisplayValue = result;
 })
