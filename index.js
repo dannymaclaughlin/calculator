@@ -220,11 +220,8 @@ divideButton.addEventListener('click', () => {
 const equalsButton = document.querySelector('.equals');
 equalsButton.addEventListener('click', () => {
     result = operate(operator, secondDisplayValue, firstDisplayValue);
-    console.log(result);
     displayText = result;
-    console.log(displayText);
     firstDisplayValue = parseInt(result);
-    console.log(firstDisplayValue);
 
     document.getElementById('displayText').innerHTML = result;
 })
