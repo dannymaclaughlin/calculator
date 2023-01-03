@@ -54,6 +54,8 @@ button7.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button8 = document.querySelector('.digit8');
@@ -66,6 +68,8 @@ button8.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button9 = document.querySelector('.digit9');
@@ -78,6 +82,8 @@ button9.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button4 = document.querySelector('.digit4');
@@ -90,18 +96,22 @@ button4.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button5 = document.querySelector('.digit5');
 button5.addEventListener('click', () => {
     if (displayText === '0') {
-        displayText = parseInt('5');
+        displayText = '5';
     } else {
         displayText += '5';
     };
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button6 = document.querySelector('.digit6');
@@ -114,6 +124,8 @@ button6.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button1 = document.querySelector('.digit1');
@@ -126,6 +138,8 @@ button1.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button2 = document.querySelector('.digit2');
@@ -138,6 +152,8 @@ button2.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button3 = document.querySelector('.digit3');
@@ -150,6 +166,8 @@ button3.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 const button0 = document.querySelector('.digit0');
@@ -162,6 +180,8 @@ button0.addEventListener('click', () => {
 
     firstDisplayValue = parseInt(displayText);
     document.getElementById('displayText').innerHTML = displayText;
+
+    displayText = displayText.substring(0, 10);
 });
 
 // decimal and clear buttons
@@ -191,6 +211,7 @@ additionButton.addEventListener('click', () => {
     secondDisplayValue = firstDisplayValue;
     firstDisplayValue = '';
     displayText = '0'
+    result = operate(operator, secondDisplayValue, firstDisplayValue);
 })
 
 const subtractButton = document.querySelector('.subtract');
@@ -199,6 +220,7 @@ subtractButton.addEventListener('click', () => {
     secondDisplayValue = firstDisplayValue;
     firstDisplayValue = '';
     displayText = '0';
+    result = operate(operator, secondDisplayValue, firstDisplayValue);
 });
 
 const multiplyButton = document.querySelector('.multiply');
@@ -207,6 +229,7 @@ multiplyButton.addEventListener('click', () => {
     secondDisplayValue = firstDisplayValue;
     firstDisplayValue = ''
     displayText = '0'
+    result = operate(operator, secondDisplayValue, firstDisplayValue);
 })
 
 const divideButton = document.querySelector('.divide');
