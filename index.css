@@ -1,6 +1,14 @@
+body {
+    padding: none;
+    border: none;
+}
+
 .mainContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 100vh;;
 }
 
 .calculatorBody {
@@ -9,23 +17,37 @@
 
     grid-template-areas: 
     'display display display display'
-    'clear sign percent divide'
+    'clear clear percent divide'
     'digit7 digit8 digit9 multiply'
     'digit4 digit5 digit6 subtract'
     'digit1 digit2 digit3 add'
     'digit0 digit0 decimal equals';
 
     width: 22em;
-    height: 100%;
+    height: fit-content;
     border: 10px solid #2F2F2F;
     background-color: #2f2f2f;
     border-radius: 10px;
 }
 
+.calculatorBody > button {
+    font-size: 1.5rem;
+}
+
+.calculatorBody > button:hover {
+    background-color: rgb(212, 156, 1);
+    border: none;
+    border-radius: 5px;
+}
 
 /* PARTS OF THE CALCULATOR UI */
 /* DISPLAY */
 #display {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    
     width: 98.5%;
     height: 6em;
     border: 3px solid black;
@@ -35,14 +57,12 @@
     background-color: white;
 }
 
-.displayTextArea {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
-    width: 98.5%;
-    height: 6em;
+.current-operand {
+    font-size: 3.5rem;
+}
+
+.previous-operand {
+    font-size: 1.5rem;
 }
 
 #displayText {
@@ -133,20 +153,3 @@ button {
 .digit0 {
     grid-area: digit0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
