@@ -101,10 +101,16 @@ operatorButtons.forEach(button => {
 });
 
 equalsButton.addEventListener('click', () => {
-    result = operate(operator,previousOperand,currentOperand);
-    console.log(result);
-    previousOperand = result;
-    currentOperand = '';
-    operator = '';
-    updateDisplay();
+    if (previousOperand === '') {
+        return;
+    } else if (currentOperand === '') {
+        return;
+    } else {
+        result = operate(operator,previousOperand,currentOperand);
+        console.log(result);
+        previousOperand = result;
+        currentOperand = '';
+        operator = '';
+        updateDisplay();
+    };
 })
